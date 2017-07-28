@@ -1,0 +1,20 @@
+body {
+    font: 10px sans-serif;
+    margin: 0;
+}
+
+.axis path {
+    stroke: none;
+    fill: none;
+}
+
+.axis text {
+    fill: #555;
+}
+
+.axis line {
+    stroke: #000;
+    opacity: 0.08;
+    shape-rendering: crispEdges;
+}
+ 

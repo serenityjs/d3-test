@@ -11,7 +11,7 @@ class Axes {
 
         this.y = d3.scaleLinear()
             .range([this.chart.height - this.chart.margin.top - this.chart.margin.bottom, 0])
-            .domain(d3.extent(this.chart.data, (d) => d.value));
+            .domain(d3.extent(this.chart.data, (d) => d.close));
 
         this.xAxis = d3.axisBottom(this.x)
             .tickSize(-(this.chart.height - this.chart.margin.bottom), 0)

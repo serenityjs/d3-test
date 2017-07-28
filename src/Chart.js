@@ -22,7 +22,7 @@ export default class Chart {
 
         this.areaFunc = d3.area()
             .x(d => this.axes.x(d.date))
-            .y0(d => this.axes.y(d.value))
+            .y0(d => this.axes.y(d.close))
             .y1(this.height - this.margin.top - this.margin.bottom);
 
         this.lineFunc = this.areaFunc.lineY0();
